@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>TimeTable</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Ubuntu:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh5AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/9e5a4cc6e9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+
+
+    <section id="title">
+
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" style="font-family: 'Ubuntu', sans-serif; font-size: 2.5rem;">timetable</a>
+
+                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#monday">Monday</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#tuesday">Tuesday</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#wednesday">Wednesday</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#thursady">Thursday</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#friday">Friday</a>
+                        </li>
+                    </ul>
+                </div> -->
+
+                <div class="timezone ml-auto" style="text-align:center;padding:1em 0; pointer-events: none">
+                    <!-- <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=medium&timezone=Asia%2FKolkata"
+                       width="100%" height="115" frameborder="0" seamless></iframe> -->
+
+                    <!-- <iframe scrolling="no" frameborder="no" clocktype="html5"
+                        style="overflow:hidden;border:0;margin:0;padding:0;width:240px;height:25px;"
+                        src="https://www.clocklink.com/html5embed.php?clock=018&timezone=GMT0530&color=gray&size=240&Title=&Message=&Target=&From=2020,1,1,0,0,0&DateFormat=d / MMM / yyyy DDD&TimeFormat=hh:mm:ss TT&Color=gray"></iframe> -->
+
+                    <iframe scrolling="no" frameborder="no" clocktype="html5"
+                        style="overflow:hidden;border:0;margin:0;padding:0;width:240px;height:25px;"
+                        src="https://www.clocklink.com/html5embed.php?clock=018&timezone=India_Mumbai&color=grey&size=240&Title=&Message=&Target=&From=2020,1,1,0,0,0&DateFormat=d / MMM / yyyy DDD&TimeFormat=hh:mm:ss TT&Color=red"></iframe>
+
+
+                </div>
+
+
+            </nav>
+        </div>
+    </section>
+
+
+    <!-- <div class="timezone" style="text-align:center;padding:1em 0; pointer-events: none">
+         <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=medium&timezone=Asia%2FKolkata"
+            width="100%" height="115" frameborder="0" seamless></iframe>
+    </div> -->
+
+
+    <div class="contents">
+
+        <div class="text-center row">
+
+            <div id="monday" class="pricing-col col-lg-4 col-md-12">
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Monday</h3>
+                    </div>
+                    <div class="card-body">
+                        <!-- <h2>Free</h2>
+                        <p class="text-p">5 Matches Per Day</p>
+                        <p class="text-p">10 Messages Per Day</p>
+                        <p class="text-p">Unlimited App Usage</p> -->
+                        <button class="btn btn-dark btn-lg btn-block" type="button">
+                            <h5>IT214 <small class="text-muted" style="font-weight: bold;"> @ 8:30</small></h5>
+                        </button>
+                        <button class="btn btn-dark btn-lg btn-block" type="button">
+                            <h5>CS374 <small class="text-muted" style="font-weight: bold;"> @ 10:15</small></h5>
+                        </button>
+                        <button class="btn btn-dark btn-lg btn-block" type="button">
+                            <h5>CT303 <small class="text-muted" style="font-weight: bold;"> @ 12:00</small></h5>
+                        </button>
+                        <!-- <button class="btn btn-dark btn-lg btn-block" type="button" onclick="window.location.href='https://docs.google.com/spreadsheets/d/17mhYuL8uxqUs6rbV_TGX6O8q6V5x_Rp6PIINGgPd4Ng/edit#gid=0';">Sign Up</button> -->
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="tuesday" class="pricing-col col-lg-4 col-md-12">
+
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Tuesday</h3>
+                    </div>
+                    <div class="card-body">
+                        <!-- <h2>$99 <small class="text-muted" style="font-weight: bold;">/ mo</small></h2> -->
+                        <!-- <p class="text-p">Unlimited Matches</p>
+                        <p class="text-p">Unlimited Messages</p>
+                        <p class="text-p">Unlimited App Usage</p> -->
+                        <button class="btn btn-dark btn-lg btn-block" type="button">
+                            <h5>IT304<small class="text-muted" style="font-weight: bold;"> @ 8:30</small></h5>
+                        </button>
+                        <button class="btn btn-dark btn-lg btn-block" type="button">
+                            <h5>HM116 <small class="text-muted" style="font-weight: bold;"> @ 10:15</small></h5>
+                        </button>
+                        <button class="btn btn-dark btn-lg btn-block" type="button">
+                            <h5>EL203 <small class="text-muted" style="font-weight: bold;"> @ 12:00</small></h5>
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="pricing-col col-lg-4 col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Wednesday</h3>
+                    </div>
+                    <div class="card-body">
+                        <!-- <h2>$49 <small class="text-muted" style="font-weight: bold;">/ mo</small></h2>
+                        <p class="text-p">Unlimited Matches</p>
+                        <p class="text-p">Unlimited Messages</p>
+                        <p class="text-p">Unlimited App Usage</p>
+                        <button class="btn btn-dark btn-lg btn-block" type="button">Sign Up</button> -->
+                        <button class="btn btn-dark btn-lg btn-block" type="button">
+                            <h5>IT304<small class="text-muted" style="font-weight: bold;"> @ 8:30</small></h5>
+                        </button>
+                        <button class="btn btn-dark btn-lg btn-block" type="button">
+                            <h5>IE402 <small class="text-muted" style="font-weight: bold;"> @ 10:15</small></h5>
+                        </button>
+                        <button class="btn btn-dark btn-lg btn-block" type="button">
+                            <h5> CHILL <small class="text-muted" style="font-weight: bold;"> @ 12:00</small></h5>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="pricing-col col-lg-4 col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Thursday</h3>
+                    </div>
+                    <div class="card-body">
+                        <!-- <h2>$49 <small class="text-muted" style="font-weight: bold;">/ mo</small></h2>
+                        <p class="text-p">Unlimited Matches</p>
+                        <p class="text-p">Unlimited Messages</p>
+                        <p class="text-p">Unlimited App Usage</p>
+                        <button class="btn btn-dark btn-lg btn-block" type="button">Sign Up</button> -->
+                        <button class="btn btn-dark btn-lg btn-block" type="button">
+                            <h5>EL203 <small class="text-muted" style="font-weight: bold;"> @ 8:30</small></h5>
+                        </button>
+                        <button class="btn btn-dark btn-lg btn-block" type="button">
+                            <h5>HM116 <small class="text-muted" style="font-weight: bold;"> @ 10:15</small></h5>
+                        </button>
+                        <button class="btn btn-dark btn-lg btn-block" type="button">
+                            <h5>IT304 <small class="text-muted" style="font-weight: bold;"> @ 12:00</small></h5>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="pricing-col col-lg-4 col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Friday</h3>
+                    </div>
+                    <div class="card-body">
+                        <!-- <h2>$49 <small class="text-muted" style="font-weight: bold;">/ mo</small></h2>
+                        <p class="text-p">Unlimited Matches</p>
+                        <p class="text-p">Unlimited Messages</p>
+                        <p class="text-p">Unlimited App Usage</p>
+                        <button class="btn btn-dark btn-lg btn-block" type="button">Sign Up</button> -->
+
+                        <button class="btn btn-dark btn-lg btn-block" type="button">
+                            <h5>IE402 <small class="text-muted" style="font-weight: bold;"> @ 8:30</small></h5>
+                        </button>
+                        <button class="btn btn-dark btn-lg btn-block" type="button">
+                            <h5>CS374 <small class="text-muted" style="font-weight: bold;"> @ 10:15</small></h5>
+                        </button>
+                        <button class="btn btn-dark btn-lg btn-block" type="button">
+                            <h5>IT214 <small class="text-muted" style="font-weight: bold;"> @ 12:00</small></h5>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+#title {
+    background-color: black;
+    margin-bottom: 40px;
+}
+
+.contents {
+    padding: 100px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.card {
+    margin: 20px;
+}
+
+.timezone {
+    padding-top: 50px;
+}
+
+.h5 {
+    font-size: 2rem;
+}
