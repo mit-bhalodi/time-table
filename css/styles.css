@@ -29,6 +29,19 @@ h5 {
     padding-bottom: 0;
 }
 
+.card-body {
+    border: 2px solid;
+}
+
+.card-header {
+    border: 2px solid;
+    
+}
+
+.card {
+    border: 2px solid;
+}
+
 @media (max-width: 985px) {
 
     .navbar-brand {
