@@ -10,6 +10,15 @@
     text-align: center;
 }
 
+@media (max-width: 1028px) {
+    .contents {
+    padding: 200px;
+    padding-top: 20px;
+    padding-bottom: 0;
+    text-align: center;
+    }
+}
+
 .card {
     margin: 20px;
 }
