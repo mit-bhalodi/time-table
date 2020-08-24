@@ -14,13 +14,38 @@ body {
     text-align: center;
 }
 
+h3 {
+    font-size: 1em;
+    padding-bottom: 0;;
+}
+
+h5 {
+    font-size: 1em;
+    padding-bottom: 0;
+}
+
 @media (max-width: 985px) {
     .contents {
-    padding: 300px;
+    padding: 100px;
     padding-top: 20px;
     padding-bottom: 0;
     text-align: center;
     }
+
+   .card {
+       height: 30rem;
+   }
+
+   .btn {
+       height: 5.5em;
+   }
+
+   h5{
+       font-size: 2.5em;
+   }
+   h3 {
+       font-size: 2.5em;
+   }
 }
 
 .card {
