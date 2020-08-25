@@ -69,6 +69,11 @@ h5 {
    h3 {
        font-size: 2.5em;
    }
+
+   .dropdown-menu {
+    font-size: 2.5rem;
+}
+
 }
 
 .card {
