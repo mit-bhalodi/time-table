@@ -85,7 +85,11 @@ h5 {
 }
 
 
-
+.dropdown-menu {
+    width: 100%;
+    text-align: center;
+    border: 1px solid;
+}
 
 
 

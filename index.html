@@ -9,8 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Ubuntu:wght@500&display=swap"
         rel="stylesheet">
+    <!-- CSS only -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -18,7 +21,7 @@
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh5AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/9e5a4cc6e9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css">
@@ -62,7 +65,7 @@
         <div class="text-center row">
 
             <div id="monday" class="pricing-col col-lg-4">
-                
+
 
                 <div class="card">
                     <div class="card-header">
@@ -101,7 +104,8 @@
                     <div class="card-body">
 
                         <button class="btn btn-dark btn-lg btn-block" type="button"
-                            onclick="window.open('https://daiict.webex.com/daiict/e.php?AT=SI&From=GPS&MK=1706741419','_blank')");">
+                            onclick="window.open('https://daiict.webex.com/daiict/e.php?AT=SI&From=GPS&MK=1706741419','_blank')"
+                            );">
                             <h5>IT304<small class="text-muted"> @ 8:30</small></h5>
                             <h6 style="color: darkgray;">Computer Networks</h6>
                         </button>
@@ -134,10 +138,29 @@
                             <h5>CT303<small class="text-muted"> @ 8:30</small></h5>
                             <h6 style="color: darkgray;">Digital Communication</h6>
                         </button>
-                        <button class="btn btn-dark btn-lg btn-block" type="button" onclick="window.open('','_blank');">
+
+                        <!-- <button class="btn btn-dark btn-lg btn-block" type="button" onclick="window.open('','_blank');">
                             <h5>Elective <small class="text-muted"> @ 10:15</small></h5>
                             <h6 style="color: darkgray;">Apna Aap Dekh Lo</h6>
-                        </button>
+                        </button> -->
+
+
+                        <div class="dropdown" style="margin: 7px 0px;">
+                            <button class="btn btn-dark btn-lg btn-block dropdown-toggle" type="button"
+                                id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <h5>Elective <small class="text-muted"> @ 8:30</small></h5>
+                                <!-- <h6 style="color: darkgray;">Apna Aap Dekh Lo</h6> -->
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <button class="dropdown-item" type="button"
+                                    onclick="window.open('','_blank');">IE401 (link not arrved yet)</button>
+                                <button class="dropdown-item" type="button"
+                                    onclick="window.open('https://daiict.webex.com/daiict/j.php?MTID=ma7c9cb288b9fac9f19ac4658fdcccff7','_blank');">IE402</button>
+                                <button class="dropdown-item" type="button"
+                                    onclick="window.open('','_blank');">IE403 (link not arrved yet)</button>
+                            </div>
+                        </div>
+
                         <button class="btn btn-outline-dark btn-lg btn-block" type="button">
                             <h5> CHILL <small class="text-muted"> @ 12:00</small></h5>
                             <h6 style="color: darkgray;">Enjoi the Break</h6>
@@ -159,7 +182,8 @@
                             <h5>EL203 <small class="text-muted"> @ 8:30</small></h5>
                             <h6 style="color: darkgray;">Embedded Hardware Design</h6>
                         </button>
-                        <button class="btn btn-dark btn-lg btn-block" type="button" onclick="window.location.href='https://daiict.webex.com/daiict/j.php?MTID=mae3a4d560cc380970e94ec937c0857d0';">
+                        <button class="btn btn-dark btn-lg btn-block" type="button"
+                            onclick="window.location.href='https://daiict.webex.com/daiict/j.php?MTID=mae3a4d560cc380970e94ec937c0857d0';">
                             <h5>HM116 <small class="text-muted"> @ 10:15</small></h5>
                             <h6 style="color: darkgray;">Principles of Economics</h6>
                         </button>
@@ -181,10 +205,27 @@
                     </div>
                     <div class="card-body">
 
-                        <button class="btn btn-dark btn-lg btn-block" type="button" onclick="window.location.href='';">
+                        <!-- <button class="btn btn-dark btn-lg btn-block" type="button" onclick="window.location.href='';">
                             <h5>Elective <small class="text-muted"> @ 8:30</small></h5>
                             <h6 style="color: darkgray;">Apna Aap Dekh Lo</h6>
-                        </button>
+                        </button> -->
+
+                        <div class="dropdown" style="margin: 7px 0px;">
+                            <button class="btn btn-dark btn-lg btn-block dropdown-toggle" type="button"
+                                id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <h5>Elective <small class="text-muted"> @ 8:30</small></h5>
+                                <!-- <h6 style="color: darkgray;">Apna Aap Dekh Lo</h6> -->
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <button class="dropdown-item" type="button"
+                                    onclick="window.open('','_blank');">IE401 (link not arrved yet)</button>
+                                <button class="dropdown-item" type="button"
+                                    onclick="window.open('https://daiict.webex.com/daiict/j.php?MTID=ma7c9cb288b9fac9f19ac4658fdcccff7','_blank');">IE402</button>
+                                <button class="dropdown-item" type="button"
+                                    onclick="window.open('','_blank');">IE403 (link not arrved yet)</button>
+                            </div>
+                        </div>
+
                         <button class="btn btn-dark btn-lg btn-block" type="button"
                             onclick="window.open('https://daiict.webex.com/daiict/j.php?MTID=m63fe02b0fb6b874474b7e0aaa7723d83','_blank');">
                             <h5>CS374 <small class="text-muted"> @ 10:15</small></h5>
@@ -211,8 +252,3 @@
 </body>
 
 </html>
-
-
-
-
-
