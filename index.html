@@ -39,18 +39,16 @@
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <a class="navbar-brand" style="font-family: 'Ubuntu', sans-serif;">timetable</a>
 
-                <div class="timezone ml-auto" style="text-align:center;padding:1em 0; pointer-events: none">
-
-
+                <!-- <div class="timezone ml-auto" style="text-align:center;padding:1em 0; pointer-events: none">
                     <iframe
                         src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=medium&timezone=Asia%2FKolkata"
                         width="100%" height="115" frameborder="0" seamless></iframe>
+                </div> -->
 
-
-
-
-
+                <div class="currently-active ml-auto    ">
+                    <span>Online Users - </span><span id="active"></span>
                 </div>
+        
 
             </nav>
         </div>
@@ -59,7 +57,9 @@
 
 
     <div class="contents">
-        <h4> if it looks like button, click it and report <a href="" onclick="window.open('https://github.com/mit-bhalodi/time-table','_blank');"> here </a>for broken links. </h4>
+        
+       <h5 class="">report <a href="" onclick="window.open('https://github.com/mit-bhalodi/time-table','_blank');"> here </a>for broken links.
+        </h5>
 
 
 
@@ -139,13 +139,6 @@
                             <h5>CT303<small class="text-muted"> @ 8:30</small></h5>
                             <h6 style="color: darkgray;">Digital Communication</h6>
                         </button>
-
-                        <!-- <button class="btn btn-dark btn-lg btn-block" type="button" onclick="window.open('','_blank');">
-                            <h5>Elective <small class="text-muted"> @ 10:15</small></h5>
-                            <h6 style="color: darkgray;">Apna Aap Dekh Lo</h6>
-                        </button> -->
-
-
                         <div class="dropdown" style="margin: 7px 0px;">
                             <button class="btn btn-dark btn-lg btn-block dropdown-toggle" type="button"
                                 id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -205,12 +198,6 @@
                         <h3>Friday</h3>
                     </div>
                     <div class="card-body">
-
-                        <!-- <button class="btn btn-dark btn-lg btn-block" type="button" onclick="window.location.href='';">
-                            <h5>Elective <small class="text-muted"> @ 8:30</small></h5>
-                            <h6 style="color: darkgray;">Apna Aap Dekh Lo</h6>
-                        </button> -->
-
                         <div class="dropdown" style="margin: 7px 0px;">
                             <button class="btn btn-dark btn-lg btn-block dropdown-toggle" type="button"
                                 id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -245,15 +232,46 @@
 
         <div class="footer">
 
-            <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/719790/t/2"></script>
-
-           
+                <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/738415/t/5"></script>
 
             <p style="margin-top: 20px;">Maintained by Meet Bhalodi</p>
 
         </div>
 
         <script src="index.js" charset="utf-8"></script>
+
+        <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.20.2.js"></script>
+        <script type="text/javascript">
+            var active = document.getElementById('active');
+            function setCurrentlyActiveUsers(numberOfUsers) {
+                active.innerText = numberOfUsers.toString();
+            }
+            setCurrentlyActiveUsers(1);
+            var pubnub = new PubNub({
+                publishKey: '__YOUR_PUB_KEY__',
+                subscribeKey: '__YOUR_SUB_KEY__',
+                heartbeatInterval: 30
+            });
+            pubnub.addListener({
+                presence: function (presenceEvent) {
+                    setCurrentlyActiveUsers(presenceEvent.occupancy);
+                }
+            });
+            pubnub.subscribe({
+                channels: ['myWebPage1'],
+                withPresence: true
+            });
+        </script>
+
+
 </body>
+
+
+
+
+
+
+
+
 
 </html>
