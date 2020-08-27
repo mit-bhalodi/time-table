@@ -105,6 +105,11 @@ h5 {
     margin-bottom: 0;
   }
 
+  .btn-dark:hover {
+        background-color: white;
+        color: black;
+  }
+
 
 
 
