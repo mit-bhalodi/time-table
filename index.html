@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <title>TimeTable</title>
-
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Ubuntu:wght@500&display=swap"
         rel="stylesheet">
@@ -29,7 +29,7 @@
 
 </head>
 
-<body>
+<body onload="digitized();">
 
 
 
@@ -39,14 +39,48 @@
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <a class="navbar-brand" style="font-family: 'Ubuntu', sans-serif;">timetable</a>
 
-                <div class="timezone ml-auto" style="text-align:center;padding:1em 0; pointer-events: none">
+                <!-- <div class="timezone ml-auto" style="text-align:center;padding:1em 0; pointer-events: none">
                     <iframe
                         src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=medium&timezone=Asia%2FKolkata"
                         width="100%" height="115" frameborder="0" seamless></iframe>
                 </div>
+ -->
 
-                
-        
+
+
+
+
+
+
+                <div class="ml-auto" style="background-color:#F3F3F3;
+                    max-width:220px; width:100%; padding:0px;">
+
+                    <table class="tabBlock" align="center" cellspacing="0" cellpadding="0" border="0">
+                        <tr>
+                            <td class="clock" id="dc"></td> <!-- THE DIGITAL CLOCK. -->
+                            <td>
+                                <table cellpadding="0" cellspacing="0" border="0">
+
+                                    <!-- HOUR IN 'AM' AND 'PM'. -->
+                                    <tr>
+                                        <td class="clocklg" id="dc_hour"></td>
+                                    </tr>
+
+                                    <!-- SHOWING SECONDS. -->
+                                    <tr>
+                                        <td class="clocklg" id="dc_second"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+
+
+
+
+
 
             </nav>
         </div>
@@ -55,13 +89,14 @@
 
 
     <div class="contents">
-        
-       <h4 class="">report <a href="" onclick="window.open('https://github.com/mit-bhalodi/time-table','_blank');"> here </a>for broken links.
+
+        <h4 class="">report <a href="" onclick="window.open('https://github.com/mit-bhalodi/time-table','_blank');">
+                here </a>for broken links.
         </h4>
         <br>
         <h4 style="color: green;">last updated August 27, 2020 05:35 PM
         </h4>
-        
+
 
 
         <div class="text-center row">
@@ -148,11 +183,14 @@
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
                                 <button class="dropdown-item" type="button"
-                                    onclick="window.open('https://daiict.webex.com/daiict/j.php?MTID=m178e49b5b364cbfa186f25b7161def2f','_blank');">IE401 (Control System)</button>
+                                    onclick="window.open('https://daiict.webex.com/daiict/j.php?MTID=m178e49b5b364cbfa186f25b7161def2f','_blank');">IE401
+                                    (Control System)</button>
                                 <button class="dropdown-item" type="button"
-                                    onclick="window.open('https://daiict.webex.com/daiict/j.php?MTID=ma7c9cb288b9fac9f19ac4658fdcccff7','_blank');">IE402 (Optimization)</button>
+                                    onclick="window.open('https://daiict.webex.com/daiict/j.php?MTID=ma7c9cb288b9fac9f19ac4658fdcccff7','_blank');">IE402
+                                    (Optimization)</button>
                                 <button class="dropdown-item" type="button"
-                                    onclick="window.open('https://meet.google.com/lookup/fder4ano6t','_blank');">IE403 (Human Computer Interaction)</button>
+                                    onclick="window.open('https://meet.google.com/lookup/fder4ano6t','_blank');">IE403
+                                    (Human Computer Interaction)</button>
                             </div>
                         </div>
 
@@ -207,11 +245,14 @@
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
                                 <button class="dropdown-item" type="button"
-                                    onclick="window.open('https://daiict.webex.com/daiict/j.php?MTID=m178e49b5b364cbfa186f25b7161def2f','_blank');">IE401 (Control System)</button>
+                                    onclick="window.open('https://daiict.webex.com/daiict/j.php?MTID=m178e49b5b364cbfa186f25b7161def2f','_blank');">IE401
+                                    (Control System)</button>
                                 <button class="dropdown-item" type="button"
-                                    onclick="window.open('https://daiict.webex.com/daiict/j.php?MTID=mfd963d0f516c89f8437565d36dd934fd','_blank');">IE402 (Optimization)</button>
+                                    onclick="window.open('https://daiict.webex.com/daiict/j.php?MTID=mfd963d0f516c89f8437565d36dd934fd','_blank');">IE402
+                                    (Optimization)</button>
                                 <button class="dropdown-item" type="button"
-                                    onclick="window.open('https://meet.google.com/lookup/fder4ano6t','_blank');">IE403 (Human Computer Interaction)</button>
+                                    onclick="window.open('https://meet.google.com/lookup/fder4ano6t','_blank');">IE403
+                                    (Human Computer Interaction)</button>
                             </div>
                         </div>
 
@@ -233,7 +274,8 @@
 
         <div class="footer">
 
-                <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/738415/t/5"></script>
+            <script type="text/javascript"
+                src="https://www.freevisitorcounters.com/en/home/counter/738415/t/5"></script>
 
             <p style="margin-top: 20px;">Maintained by Meet Bhalodi</p>
 
@@ -241,8 +283,45 @@
 
 
 
-       
+
 
 </body>
+
+
+<script>
+    // OUR FUNCTION WHICH IS EXECUTED ON LOAD OF THE PAGE.
+    function digitized() {
+        var dt = new Date();    // DATE() CONSTRUCTOR FOR CURRENT SYSTEM DATE AND TIME.
+        var hrs = dt.getHours();
+        var min = dt.getMinutes();
+        var sec = dt.getSeconds();
+
+        min = Ticking(min);
+        sec = Ticking(sec);
+
+        document.getElementById('dc').innerHTML = hrs + ":" + min;
+        document.getElementById('dc_second').innerHTML = sec;
+
+        if (hrs > 12) {
+            document.getElementById('dc_hour').innerHTML = 'PM';
+        }
+        else {
+            document.getElementById('dc_hour').innerHTML = 'AM';
+        }
+
+        // CALL THE FUNCTION EVERY 1 SECOND (RECURSION).
+        var time
+        time = setInterval('digitized()', 1000);
+    }
+
+    function Ticking(ticVal) {
+        if (ticVal < 10) {
+            ticVal = "0" + ticVal;
+        }
+        return ticVal;
+    }
+</script>
+
+
 
 </html>
