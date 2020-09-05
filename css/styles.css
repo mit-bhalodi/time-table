@@ -62,6 +62,14 @@ h5 {
        height: 30rem;
    }
 
+   .card-1 {
+       height: 44rem;
+   }
+
+   .card-2 {
+       height: 37rem;
+   }
+
    .btn {
        height: 5.5em;
    }
