@@ -33,6 +33,14 @@ h5 {
     height: auto;
 }
 
+.card-body {
+    border: 2px solid;
+}
+
+.card-header {
+    border: 2px solid;
+}
+
 @media (max-width: 985px) {
 
     .navbar-brand {
