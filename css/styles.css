@@ -28,18 +28,8 @@ h5 {
     padding-bottom: 0;
 }
 
-.card-body {
-    border: 2px solid;
-}
-
-.card-header {
-    border: 2px solid;
-   
-}
-
 .card {
     margin: 20px;
-    border: 2px solid;
     height: auto;
 }
 
