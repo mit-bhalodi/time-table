@@ -14,10 +14,6 @@ body {
     text-align: center;
 }
 
-code {
-    font-size: 1.2rem;
-}
-
 .navbar-brand {
     font-size: 2.5rem;
 }
@@ -42,7 +38,9 @@ h5 {
 }
 
 .card {
+    margin: 20px;
     border: 2px solid;
+    height: auto;
 }
 
 @media (max-width: 985px) {
@@ -57,18 +55,6 @@ h5 {
     padding-bottom: 0;
     text-align: center;
     }
-
-   .card {
-       height: 30rem;
-   }
-
-   .card-1 {
-       height: 44rem;
-   }
-
-   .card-2 {
-       height: 37rem;
-   }
 
    .btn {
        height: 5.5em;
@@ -85,14 +71,6 @@ h5 {
     font-size: 2.5rem;
 }
 
-}
-
-.card {
-    margin: 20px;
-}
-
-.timezone {
-    padding-top: 50px;
 }
 
 
