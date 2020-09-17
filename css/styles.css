@@ -20,7 +20,8 @@ body {
 
 h3 {
     font-size: 1em;
-    padding-bottom: 0;;
+    padding-bottom: 0;
+    ;
 }
 
 h5 {
@@ -43,32 +44,31 @@ h5 {
 }
 
 @media (max-width: 985px) {
-
     .navbar-brand {
         font-size: 4rem;
     }
-
     .contents {
-    padding: 100px;
-    padding-top: 20px;
-    padding-bottom: 0;
-    text-align: center;
+        padding: 100px;
+        padding-top: 20px;
+        padding-bottom: 0;
+        text-align: center;
     }
-
-   .btn {
-       height: auto;
-   }
-
-   h5, h3, .dropdown-menu{
-       font-size: 2rem;
-   }
+    .btn-dark {
+        height: 100px;
+    }
+    h5,
+    h3,
+    .dropdown-menu {
+        font-size: 2rem;
+    }
+    h6 {
+        font-size: 1.5rem;
+    }
 }
-
 
 .footer {
     padding: 20px;
 }
-
 
 .dropdown-menu {
     width: 100%;
@@ -76,6 +76,17 @@ h5 {
     border: 1px solid;
 }
 
-  .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin-bottom: 0;
-  }
+}
