@@ -53,17 +53,17 @@ h5 {
         padding-bottom: 0;
         text-align: center;
     }
-    .btn-dark {
+    /* .btn-dark {
         height: 100px;
-    }
+    } */
     h5,
     h3,
     .dropdown-menu {
         font-size: 2rem;
     }
-    h6 {
+    /* h6 {
         font-size: 1.5rem;
-    }
+    } */
 }
 
 .footer {
