@@ -18,3 +18,8 @@
     height: 100vh;
     display:flex;
   }
+@media (max-width : 900px) {
+  .element {
+    font-size: 5rem;
+  }
+}
