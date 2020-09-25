@@ -1,19 +1,419 @@
-<!DOCTYPE html>
-
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <title>TimeTable</title>
-    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Ubuntu:wght@500&display=swap"
-        rel="stylesheet">
-    <!-- CSS only -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
 
-    <!-- JS, Popper.js, and jQuery -->
+    <title>TimeTable</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body style="background-color: rgba(243, 243, 243, 0.623);">
+
+    <nav class="navbar navbar-dark bg-dark">
+        <span style="font-size: 40px; font-family: 'Didact Gothic', sans-serif;"
+            class="navbar-brand mb-0 h1">timetable</span>
+        <!-- <button class="btn btn-light" onclick="myFunction()">Toggle Dark</button> -->
+    </nav>
+    <h1 class="text-center">Lectures</h1>
+
+    <div class="container text-center row">
+
+
+        <div class="col-lg-4 col-md-6">
+
+
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Monday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a class="links" href=""
+                                onclick="window.open('https://daiict.webex.com/meet/minal_bhise','_blank')">IT214</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a class="links" href=""
+                                onclick="window.open('https://daiict.webex.com/daiict/j.php?MTID=m63fe02b0fb6b874474b7e0aaa7723d83','_blank')">CS374</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a class="links" href=""
+                                onclick="window.open('https://daiict.webex.com/daiict/j.php?MTID=md4d52d4462257bc3bd5c0de85d03040f','_blank')">CT303</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+
+        <div class="col-lg-4 col-md-6">
+
+
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Tuesday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a class="links" href=""
+                                onclick="window.open('https://daiict.webex.com/daiict/e.php?AT=SI&From=GPS&MK=1706741419','_blank')">IT304</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a class="links" href=""
+                                onclick="window.open('https://daiict.webex.com/daiict/j.php?MTID=m9fb637e4980c773eb12c47769fd99618','_blank')">HM116</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a class="links" href=""
+                                onclick="window.open('https://daiict.webex.com/daiict/j.php?MTID=m80013d2bf5ddc655cebd3e91027670fc','_blank')">EL203</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6">
+
+
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Wednesday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a class="links" href=""
+                                onclick="window.open('https://daiict.webex.com/daiict/j.php?MTID=m3de73c300c3ae7d9474983e13f16d812','_blank')">CT303</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a class="links" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Elective
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item"
+                                    onclick="window.open( 'https://daiict.webex.com/daiict/j.php?MTID=m178e49b5b364cbfa186f25b7161def2f', '_blank'); ">IE401</a>
+                                <a class="dropdown-item"
+                                    onclick="window.open( 'https://daiict.webex.com/daiict/j.php?MTID=mc39a3bb8eadf556909bc12ae14ce4255', '_blank'); ">IE402</a>
+                                <a class="dropdown-item"
+                                    onclick="window.open( 'https://meet.google.com/lookup/fder4ano6t', '_blank'); ">IE403</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Null</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6">
+
+
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Thursday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a class="links" href=""
+                                onclick="window.open('https://daiict.webex.com/daiict/j.php?MTID=m681d7d2ef2ac0fd989fd20dc67d508a1','_blank')">EL203</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a class="links" href=""
+                                onclick="window.open('https://daiict.webex.com/daiict/j.php?MTID=m3d590603e3a6b43132e13efade1bd4e1','_blank')">HM116</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a class="links" href=""
+                                onclick="window.open('https://daiict.webex.com/daiict/e.php?AT=SI&From=GPS&MK=1706538874','_blank')">IT304</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6">
+
+
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Friday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <a class="links" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Elective
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item"
+                                    onclick="window.open( 'https://daiict.webex.com/daiict/j.php?MTID=mfd5e5a63d9345801d5445483398f2483', '_blank'); ">IE401</a>
+                                <a class="dropdown-item"
+                                    onclick="window.open( 'https://daiict.webex.com/daiict/j.php?MTID=mfb3f5bdb270934a8607d6a014dc64f8b', '_blank'); ">IE402</a>
+                                <a class="dropdown-item"
+                                    onclick="window.open( 'https://meet.google.com/lookup/fder4ano6t', '_blank'); ">IE403</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a class="links" href="" onclick="window.open('','_blank')">CS374</a></td>
+                    </tr>
+                    <tr>
+                        <td><a class="links" href="" onclick="window.open('','_blank')">IT214</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+
+    </div>
+
+
+    </div>
+
+
+    </div>
+
+
+    <h1 class="text-center">Labs</h1>
+
+    <div class="container text-center row">
+
+
+        <div class="col-lg-4 col-md-6">
+
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">CT303</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a class="links" href=""
+                                onclick="window.open('https://meet.google.com/dvh-jzeb-wbr','_blank')">Batch A</a></td>
+                    </tr>
+                    <tr>
+                        <td><a class="links" href=""
+                                onclick="window.open('https://meet.google.com/hba-vwqy-nku','_blank')">Batch B</a></td>
+                    </tr>
+                    <tr>
+                        <td><a class="links" href=""
+                                onclick="window.open('https://meet.google.com/znh-xqwg-svx','_blank')">Batch C</a></td>
+                    </tr>
+                    <tr>
+                        <td><a class="links" href=""
+                                onclick="window.open('https://meet.google.com/uuo-shpv-zhc','_blank')">Batch D</a></td>
+                    </tr>
+                    <tr>
+                        <td><a class="links" href=""
+                                onclick="window.open('https://meet.google.com/szo-yvzb-aks','_blank')">Batch E</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+
+        <div class="col-lg-4 col-md-6">
+
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">IT214 General Links</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a class="links" href="" onclick="window.open('https://meet.google.com/lookup/btgkai2mtc','_blank')">001 - 100</a></td>
+                    </tr>
+                    <tr>
+                        <td><a class="links" href="" onclick="window.open('https://meet.google.com/lookup/acw4baczo2','_blank')">101 - 200</a></td>
+                    </tr>
+                    <tr>
+                        <td><a class="links" href="" onclick="window.open('https://meet.google.com/lookup/a5572agvh4','_blank')">Remaining</a></td>
+                    </tr>
+                    <tr>
+                        <td><a class="links" href="" onclick="window.open('https://meet.google.com/lookup/gbrq3jbs2u','_blank')">Extra</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+
+        <div class="col-lg-4 col-md-6">
+
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">IT304 - 1</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a class="links" href="" onclick="window.open('https://meet.google.com/isf-ggpg-qvx','_blank')">A-B-C-D</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a class="links" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Batch A
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" onclick="window.open( 'https://meet.google.com/faj-ffng-bpb', '_blank'); ">Lab</a>
+                                <a class="dropdown-item" onclick="window.open( 'https://meet.google.com/suy-aokt-jmy', '_blank'); ">Viva</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a class="links" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Batch B
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" onclick="window.open( 'https://meet.google.com/tgg-hero-vit', '_blank'); ">Lab</a>
+                                <a class="dropdown-item" onclick="window.open( 'https://meet.google.com/vpn-xjoa-xoj', '_blank'); ">Viva</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a class="links" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Batch C
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" onclick="window.open( 'https://meet.google.com/kqj-hndv-zjo', '_blank'); ">Lab</a>
+                                <a class="dropdown-item" onclick="window.open( 'https://meet.google.com/fbp-wmtp-chc', '_blank'); ">Viva</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a class="links" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Batch D
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" onclick="window.open( 'https://meet.google.com/asb-gmgw-tfu', '_blank'); ">Lab</a>
+                                <a class="dropdown-item" onclick="window.open( 'https://meet.google.com/ode-sfho-fap', '_blank'); ">Viva</a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">IT304 - 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a class="links" href="" onclick="window.open('https://meet.google.com/hku-jdpb-jbx','_blank')">E-F-G-H</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a class="links" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Batch E
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" onclick="window.open( 'https://meet.google.com/kon-egzv-aex', '_blank'); ">Lab</a>
+                                <a class="dropdown-item" onclick="window.open( 'https://meet.google.com/diw-wmwm-yvx', '_blank'); ">Viva</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a class="links" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Batch F
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" onclick="window.open( 'https://meet.google.com/cjr-jssj-sda', '_blank'); ">Lab</a>
+                                <a class="dropdown-item" onclick="window.open( 'https://meet.google.com/nch-vtwm-uad', '_blank'); ">Viva</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a class="links" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Batch G
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" onclick="window.open( 'https://meet.google.com/sde-dqgv-ynv', '_blank'); ">Lab</a>
+                                <a class="dropdown-item" onclick="window.open( 'https://meet.google.com/dgg-ztsb-qyp', '_blank'); ">Viva</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a class="links" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Batch H
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" onclick="window.open( 'https://meet.google.com/sfw-tpmz-has', '_blank'); ">Lab</a>
+                                <a class="dropdown-item" onclick="window.open( 'https://meet.google.com/ucr-etoc-dko', '_blank'); ">Viva</a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -23,42 +423,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon1.ico">
-
-</head>
-
-<body>
-
-
-    <div class="container text-center"">
-        <div class=" element" style="font-weight: 400; font-size: 2rem;">
-        <a href="monday.html" style="font-size: 3rem; text-decoration: none; color: rgb(100, 100, 100)">Monday</a>
-        <hr width="300px">
-        <a href="tuesday.html" style="font-size: 3rem; text-decoration: none; color: rgb(100, 100, 100)">Tuesday</a>
-        <hr width="300px">
-        <a href="wednesday.html"
-            style="font-size: 3rem; text-decoration: none; color: rgb(100, 100, 100)">Wednesday</a>
-        <hr width="300px">
-        <a href="thursday.html" style="font-size: 3rem; text-decoration: none; color: rgb(100, 100, 100)">Thursday</a>
-        <hr width="300px">
-        <a href="friday.html" style="font-size: 3rem; text-decoration: none; color: rgb(100, 100, 100)">Friday</a>
-        <hr width="300px">
-        <a href="saturday.html" style="font-size: 3rem; text-decoration: none; color: rgb(100, 100, 100)">Saturday</a>
-        <!-- <h3>Redirecting.....</h3> -->
-        <!-- <div class="text-center" style="pointer-events: none;">
-            <script type="text/javascript "
-                src="https://www.freevisitorcounters.com/en/home/counter/738415/t/5 "></script>
-        </div> -->
-
-    </div>
-
-    </div>
-    </div>
-
-
-<!-- <script src="index.js"></script> -->
-
+    <script src="index.js"></script>
 </body>
 
 </html>
